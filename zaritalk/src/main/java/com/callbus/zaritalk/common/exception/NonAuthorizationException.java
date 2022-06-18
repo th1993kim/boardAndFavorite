@@ -1,4 +1,4 @@
-package com.callbus.zaritalk.board.exception;
+package com.callbus.zaritalk.common.exception;
 
 
 public class NonAuthorizationException extends Exception {

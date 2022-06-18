@@ -20,9 +20,9 @@ public class BoardLikeService {
 	private final BoardLikeRepository boardLikeRepository;
 	private final CustomerRepository customerRepository;
 	
-	public Boolean like(Long boardId, BoardLikeRequestDTO boardLikeRequestDTO) {
+	public Boolean like(Long boardId, Long id) {
 		Board board = boardRepository.findById(boardId).orElseThrow();
-		Customer customer = customerRepository.findByAccountId(boardLikeRequestDTO.getAccountId());
+		Customer customer = customerRepository.findById(id).orElseThrow();
 		BoardLike boardLike = boardLikeRepository.findByBoardAndCustomer(board,customer);
 		if(boardLike != null)
 			boardLikeRepository.delete(boardLike);

@@ -42,13 +42,13 @@ public class InitService {
 			boardList.add(Board.builder().customer(lessor).title("lessor 테스트 " + i + "번째").content("내용은 가짜").build());
 			boardList.add(Board.builder().customer(lessee).title("lessee 테스트 " + i + "번째").content("내용은 가짜").build());
 		}
+		boardRepository.saveAllAndFlush(boardList);
 		
 		List<BoardLike> boardLikeList = new ArrayList<>();
 		for(int i=0; i<boardList.size(); i++)
 			boardLikeList.add(BoardLike.builder().customer(realtor).board(boardList.get(i)).build());
 		boardLikeList.add(BoardLike.builder().customer(lessor).board(boardList.get(0)).build());
 		boardLikeList.add(BoardLike.builder().customer(lessee).board(boardList.get(0)).build());
-		boardRepository.saveAll(boardList);
 		
 		boardLikeRepository.saveAll(boardLikeList);
 	}
