@@ -14,6 +14,9 @@ import com.callbus.zaritalk.board.service.BoardLikeService;
 import com.callbus.zaritalk.board.service.BoardService;
 import com.callbus.zaritalk.common.annotation.AuthCheck;
 import com.callbus.zaritalk.common.annotation.Id;
+import com.callbus.zaritalk.common.exception.AuthenticationException;
+import com.callbus.zaritalk.customer.domain.Customer;
+import com.callbus.zaritalk.customer.service.CustomerService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +28,7 @@ public class boardController {
 	
 	private final BoardService boardService;
 	private final BoardLikeService boardLikeService;
+	private final CustomerService customerService;
 	
 	/*
 	 * @Return : List<BoardEntity>
@@ -50,6 +54,9 @@ public class boardController {
 	@AuthCheck
 	@PostMapping("/boards")
 	public ResponseEntity<?> insert(@Id Long id,BoardRequestDTO boardRequestDTO) throws Exception{
+		Customer customer = customerService.findById(id);
+		if(customer == null)
+			throw new AuthenticationException();
 		return new ResponseEntity<>(boardService.insert(id,boardRequestDTO),HttpStatus.CREATED);
 	}
 	

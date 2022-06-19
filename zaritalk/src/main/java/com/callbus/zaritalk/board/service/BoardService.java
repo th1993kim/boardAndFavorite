@@ -31,13 +31,10 @@ public class BoardService {
 	}
 	
 	public Board insert(Long id,BoardRequestDTO boardRequestDTO) throws AuthenticationException{
-		Customer customer = customerRepository.findById(id).orElseThrow();
-		if(customer == null)
-			throw new AuthenticationException();
 		Board board = Board.builder()
 							.title(boardRequestDTO.getTitle())
 							.content(boardRequestDTO.getContent())
-							.customer(customer)
+							.customer(Customer.builder().id(id).build())
 	   						.build();
 		return boardRepository.save(board);
 	}
