@@ -5,10 +5,6 @@
 &nbsp;  
 ![image](https://user-images.githubusercontent.com/81105748/173882201-3185a63f-2c30-44d3-af4c-0ac719c025a6.png)
 
-&nbsp;
-### :man_office_worker: 지원자 : 김태현
-### :email: Email : th1993kim@gmail.com
-### :iphone: H.P : 010-5536-5570
 
 &nbsp;  
 ### :computer: 사용 프레임워크 및 라이브러리
@@ -120,3 +116,7 @@
 1. 좋아요를 중복 요청시 해당 좋아요를 취소한다.
 2. 작성자Id(기본키)와 Authorization에 요청된 숫자가 동일해야 수정, 삭제 가능하다.
  
+&nbsp;
+#### :man_office_worker: 지원자 : 김태현
+#### :email: Email : th1993kim@gmail.com
+#### :iphone: H.P : 010-5536-5570
