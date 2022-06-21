@@ -20,7 +20,7 @@
 ### :earth_asia: 실행
 
 * H2 Database 설치 
-  * 설치 URL : https://www.h2database.com/html/main.html windows 다운로드 후
+  * 설치 URL : https://www.h2database.com/html/main.html windows 다운로드 후 실행
   * JDBC URL : __jdbc:h2:tcp://localhost/~/callbus__ 로 URL 설정 
   * username : __sa__
   * password : __공백__
