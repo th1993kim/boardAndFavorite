@@ -16,11 +16,13 @@
 &nbsp;
 ### :earth_asia: 실행
 
-* H2 Database 설치 https://www.h2database.com/html/main.html
-  * jdbc:h2:tcp://localhost/~/callbus 로 URL 설정 
+* H2 Database 설치 
+  * 설치 URL : https://www.h2database.com/html/main.html windows 다운로드 후
+  * JDBC URL : jdbc:h2:tcp://localhost/~/callbus 로 URL 설정 
   * username : sa
   * password : 공백
-
+  
+&nbsp;  
 * Eclipse 구동
   * GitHub Repository 이용 / 프로젝트 Import
   * Import 완료 후 프로젝트 우클릭 -> Gradle -> Refresh Gradle Project
