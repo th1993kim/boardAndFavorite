@@ -40,12 +40,13 @@
 * __테스트 코드 검증__ : &nbsp;  
   src/test/java 패키지에서 com.callbus.zaritalk.board 패키지 내의 Controller , Service , Repository Class __우클릭 후 Run As -> Junit5 Test 가동__
 &nbsp;  
-### POSTMAN 검증 예시
-================================================================================================================ 
+&nbsp;    
+### * __POSTMAN 검증 예시__ *
+&nbsp; 
 ![image](https://user-images.githubusercontent.com/81105748/174868510-e55052c0-0714-411c-8275-993bb0425fd9.png)
-================================================================================================================
-
 &nbsp;
+&nbsp;
+&nbsp;  
 ### :memo: API Documentation
 &nbsp;  
 
