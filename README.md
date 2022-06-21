@@ -107,7 +107,7 @@
 &nbsp;  
 <img src="https://img.shields.io/badge/POST-like-blue">&nbsp;     
   * URL : __```http://localhost/boards/1/likes```__
-  * Function : 좋아요 (게시글) - 한번 요청시에는 취소됨
+  * Function : 좋아요 (게시글) - 중복 요청시에는 취소됨
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
 
