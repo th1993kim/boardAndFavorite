@@ -43,7 +43,7 @@
 &nbsp;
 ### :memo: API Documentation
 
-* https://img.shields.io/badge/GET-getList-green ex) ```http://localhost/boards```
+* [https://img.shields.io/badge/GET-getList-green](https://img.shields.io/badge/GET-getList-green) ex) ```http://localhost/boards```
   * Function : 게시글 목록 조회 
   * Header : Authorization - <span style="color:gray">__필수아님__</span>
   * __Return__ : BoardList
