@@ -22,7 +22,7 @@
   * password : 공백
 
 * Eclipse 구동
-  * GitHub Repository 이용 프로젝트 Import
+  * GitHub Repository 이용 / 프로젝트 Import
   * Import 완료 후 프로젝트 우클릭 -> Gradle -> Refresh Gradle Project
   * 프로젝트 우클릭 -> Run As -> Spring Boot App
 
