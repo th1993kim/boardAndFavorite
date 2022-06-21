@@ -7,17 +7,23 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
-import com.callbus.zaritalk.common.annotation.Id;
+import com.callbus.zaritalk.common.annotation.GetCustomer;
+import com.callbus.zaritalk.customer.domain.Customer;
+import com.callbus.zaritalk.customer.service.CustomerService;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+@RequiredArgsConstructor
 @Component
 @Slf4j
-public class IdArgumentResolver implements HandlerMethodArgumentResolver {
+public class GetCustomerArgumentResolver implements HandlerMethodArgumentResolver {
 
+	private final CustomerService customerService;
+	
 	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
-		return parameter.hasParameterAnnotation(Id.class) && parameter.getParameterType().equals(Long.class) ;
+		return parameter.hasParameterAnnotation(GetCustomer.class) && parameter.getParameterType().equals(Customer.class) ;
 	}
 
 	@Override
@@ -26,7 +32,7 @@ public class IdArgumentResolver implements HandlerMethodArgumentResolver {
 		String authorization = webRequest.getHeader("Authorization");
 		if(authorization != null) {
 			String[] split = authorization.split(" ");
-			return Long.valueOf(split[1]);
+			return customerService.getOne(Long.valueOf(split[1]));
 		}
 		return null;
 	}

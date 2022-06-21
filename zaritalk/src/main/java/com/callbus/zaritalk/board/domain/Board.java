@@ -27,6 +27,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import com.callbus.zaritalk.board.dto.BoardResponseDTO;
 import com.callbus.zaritalk.customer.domain.AccountType;
 import com.callbus.zaritalk.customer.domain.Customer;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -67,9 +68,10 @@ public class Board {
 	
 	private String content;			//내용
 	
-	@ColumnDefault(value = "0")
+	@ColumnDefault(value = "false")
 	private Boolean delYn;			//삭제여부
 	
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name="id")
 	private Customer customer;	//작성자

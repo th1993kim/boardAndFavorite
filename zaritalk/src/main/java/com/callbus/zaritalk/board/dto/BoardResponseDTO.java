@@ -12,7 +12,7 @@ public class BoardResponseDTO {
 	private String content;				//글 내용
 	private Long likeCnt;				//좋아요 수
 	private String accountId;			//작성자
-	private String accountType;	//계정 타입
+	private String accountType;			//계정 타입
 	private String accountTypeNm;		//계정 타입
 	private Boolean likeYn;				//좋아요 등록 여부
 	
@@ -22,10 +22,9 @@ public class BoardResponseDTO {
 		this.likeCnt = likeCnt;
 		this.accountId = accountId;
 		this.accountType = accountType;
-		for(AccountType accountTp : AccountType.values()) {
+		for(AccountType accountTp : AccountType.values()) 
 			if(accountTp.name().equalsIgnoreCase(accountType))
-				accountTypeNm = accountTp.getAuthName();
-		}
+				this.accountTypeNm = accountTp.getAuthName();
 		this.likeYn = likeYn;
 	}
 	
