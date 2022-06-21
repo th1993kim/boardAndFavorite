@@ -42,20 +42,24 @@
 
 &nbsp;
 ### :memo: API Documentation
+&nbsp;  
 
-* [https://img.shields.io/badge/GET-getList-green](https://img.shields.io/badge/GET-getList-green) ex) ```http://localhost/boards```
+ <img src="https://img.shields.io/badge/GET-getList-green">&nbsp;
+  * URL : ```http://localhost/boards```
   * Function : 게시글 목록 조회 
   * Header : Authorization - <span style="color:gray">__필수아님__</span>
   * __Return__ : BoardList
   
 &nbsp;   
-
-* https://img.shields.io/badge/GET-getOne-green ex) ```http://localhost/boards/1 ```
+ <img src="https://img.shields.io/badge/GET-getOne-green">&nbsp;  
+  * URL : ```http://localhost/boards/1 ```
   * Function : 게시글 상세 조회
   * __Return__ : BoardEntity
 
 &nbsp;
-* https://img.shields.io/badge/POST-insert-green ex) ```http://localhost/boards```
+
+<img src="https://img.shields.io/badge/POST-insert-blue">&nbsp;  
+  * URL : ```http://localhost/boards```
   * Function : 게시글 입력
   * Header : Authorization - <span style="color:red">__필수__</span>
   * Body : JSON DATA &nbsp;  
@@ -66,7 +70,8 @@
   * __Return__ : BoardEntity
   
  &nbsp; 
-* https://img.shields.io/badge/PUT-update-green ex) ```http://localhost/boards/1```
+<img src="https://img.shields.io/badge/PUT-update-important">&nbsp;  
+  * URL : ```http://localhost/boards/1```
   * Function : 게시글 수정
   * Header : Authorization - <span style="color:red">__필수__</span>
   * Body : JSON DATA &nbsp;  
@@ -77,14 +82,15 @@
   * __Return__ : TRUE     
 
 &nbsp;
-
-* https://img.shields.io/badge/DELETE-delete-green ex) ```http://localhost/boards/1```
+<img src="https://img.shields.io/badge/DELETE-delete-red">&nbsp;  
+  * URL : ```http://localhost/boards/1```
   * Function : 게시글 삭제
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
 
-&nbsp;
-* <img src="https://img.shields.io/badge/POST-like-green"> ex) ```http://localhost/boards/1/likes```
+&nbsp;  
+<img src="https://img.shields.io/badge/POST-like-blue">&nbsp;     
+  * URL : ```http://localhost/boards/1/likes```
   * Function : 좋아요 (게시글) - 한번 요청시에는 취소됨
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
@@ -92,5 +98,5 @@
 &nbsp;
 ### :point_up: 추가 요구사항
 1. 좋아요를 중복 요청시 해당 좋아요를 취소한다.
-2. 작성자Id(기본키)와 Authorization에 등록된 숫자가 동일해야 수정, 삭제 가능하다.
+2. 작성자Id(기본키)와 Authorization에 요청된 숫자가 동일해야 수정, 삭제 가능하다.
  
