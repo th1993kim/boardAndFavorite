@@ -32,7 +32,7 @@
 * __Post Man 검증 (외부 유틸리티)__ : 
   * https://www.postman.com/ 응용 프로그램 혹은 웹 로그인 
   * BoardController에 해당하는 URL ex) GetMethod http://localhost/boards
-  * Authorization이 필요한경우 Headers탭에 __Authorization : REALTOR__ 같은 데이터 입력
+  * Authorization이 필요한경우 Headers탭에 __Authorization : REALTOR 1__ 같은 데이터 입력
   * Body가 필요한 경우 ex) BoardRequestDTO Body탭에 __raw선택 -> text를 json으로 변경 후__ 데이터 입력     
 
  &nbsp;
