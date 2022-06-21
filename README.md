@@ -1,9 +1,14 @@
 # callbuslab
 
+
 ## 과제 구상도
+&nbsp;  
 ![image](https://user-images.githubusercontent.com/81105748/173882201-3185a63f-2c30-44d3-af4c-0ac719c025a6.png)
 
 &nbsp;
+### :man_office_worker: 지원자 : 김태현
+
+&nbsp;  
 ### :computer: 사용 프레임워크 및 라이브러리
 
 * Spring Boot 2.7.0  
@@ -18,15 +23,16 @@
 
 * H2 Database 설치 
   * 설치 URL : https://www.h2database.com/html/main.html windows 다운로드 후
-  * JDBC URL : jdbc:h2:tcp://localhost/~/callbus 로 URL 설정 
-  * username : sa
-  * password : 공백
-  
+  * JDBC URL : __jdbc:h2:tcp://localhost/~/callbus__ 로 URL 설정 
+  * username : __sa__
+  * password : __공백__
+  *  __*자세한 설정은 프로젝트 내의 application.yml를 참고 하시면 됩니다.__
+
 &nbsp;  
 * Eclipse 구동
   * GitHub Repository 이용 / 프로젝트 Import
-  * Import 완료 후 프로젝트 우클릭 -> Gradle -> Refresh Gradle Project
-  * 프로젝트 우클릭 -> Run As -> Spring Boot App
+  * Import 완료 후 프로젝트 우클릭 -> Gradle -> __Refresh Gradle Project__
+  * 프로젝트 우클릭 -> Run As -> __Spring Boot App__
 
 &nbsp;
 ### :dart: 검증
