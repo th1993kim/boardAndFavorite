@@ -84,7 +84,7 @@
   * __Return__ : TRUE     
 
 &nbsp;
-* https://img.shields.io/badge/POST-like-green ex) ```http://localhost/boards/1/likes```
+* <img src="https://img.shields.io/badge/POST-like-green"> ex) ```http://localhost/boards/1/likes```
   * Function : 좋아요 (게시글) - 한번 요청시에는 취소됨
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
