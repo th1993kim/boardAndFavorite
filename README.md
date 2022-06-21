@@ -55,15 +55,16 @@
   * Function : 게시글 목록 조회 
   * Header : Authorization - <span style="color:gray">__필수아님__</span>
   * __Return__ : BoardList
-  
-&nbsp;   
- <img src="https://img.shields.io/badge/GET-getOne-green">&nbsp;  
+
+&nbsp;      
+&nbsp;     
+<img src="https://img.shields.io/badge/GET-getOne-green">&nbsp;  
   * URL : __```http://localhost/boards/1 ```__
   * Function : 게시글 상세 조회
   * __Return__ : BoardEntity
 
-&nbsp;
-
+&nbsp;  
+&nbsp;  
 <img src="https://img.shields.io/badge/POST-insert-blue">&nbsp;  
   * URL : __```http://localhost/boards```__
   * Function : 게시글 입력
@@ -75,7 +76,8 @@
         }
   * __Return__ : BoardEntity
   
- &nbsp; 
+&nbsp;  
+&nbsp;  
 <img src="https://img.shields.io/badge/PUT-update-important">&nbsp;  
   * URL : __```http://localhost/boards/1```__
   * Function : 게시글 수정
@@ -87,13 +89,15 @@
         }
   * __Return__ : TRUE     
 
-&nbsp;
+&nbsp;  
+&nbsp;  
 <img src="https://img.shields.io/badge/DELETE-delete-red">&nbsp;  
   * URL : __```http://localhost/boards/1```__
   * Function : 게시글 삭제
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
 
+&nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/POST-like-blue">&nbsp;     
   * URL : __```http://localhost/boards/1/likes```__
