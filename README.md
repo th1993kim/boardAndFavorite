@@ -61,7 +61,7 @@
 &nbsp;  
 
  <img src="https://img.shields.io/badge/GET-getList-green">&nbsp;
-  * URL : __```http://localhost/boards```__
+  * URL : __GET &nbsp;```http://localhost/boards```__
   * Function : 게시글 목록 조회 
   * Header : Authorization - <span style="color:gray">__필수아님__</span>
   * __Return__ : BoardList
@@ -69,14 +69,14 @@
 &nbsp;      
 &nbsp;     
 <img src="https://img.shields.io/badge/GET-getOne-green">&nbsp;  
-  * URL : __```http://localhost/boards/1 ```__
+  * URL : __GET &nbsp;```http://localhost/boards/1 ```__
   * Function : 게시글 상세 조회
   * __Return__ : BoardEntity
 
 &nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/POST-insert-blue">&nbsp;  
-  * URL : __```http://localhost/boards```__
+  * URL : __POST &nbsp;```http://localhost/boards```__
   * Function : 게시글 입력
   * Header : Authorization - <span style="color:red">__필수__</span>
   * Body : JSON DATA &nbsp;  
@@ -89,7 +89,7 @@
 &nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/PUT-update-important">&nbsp;  
-  * URL : __```http://localhost/boards/1```__
+  * URL : __PUT &nbsp;```http://localhost/boards/1```__
   * Function : 게시글 수정
   * Header : Authorization - <span style="color:red">__필수__</span>
   * Body : JSON DATA &nbsp;  
@@ -102,7 +102,7 @@
 &nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/DELETE-delete-red">&nbsp;  
-  * URL : __```http://localhost/boards/1```__
+  * URL : __DELETE &nbsp;```http://localhost/boards/1```__
   * Function : 게시글 삭제
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
@@ -110,7 +110,7 @@
 &nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/POST-like-blue">&nbsp;     
-  * URL : __```http://localhost/boards/1/likes```__
+  * URL : __POST &nbsp;```http://localhost/boards/1/likes```__
   * Function : 좋아요 (게시글) - 중복 요청시에는 취소됨
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
