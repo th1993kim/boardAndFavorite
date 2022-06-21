@@ -8,7 +8,7 @@
 
 &nbsp;  
 ### :computer: 사용 프레임워크 및 라이브러리
-
+---
 * Spring Boot 2.7.0  
 * Lombok AnnotationProcessor  
 * Spring Validation
@@ -18,7 +18,7 @@
 
 &nbsp;
 ### :earth_asia: 실행
-
+---
 * H2 Database 설치 
   * 설치 URL : https://www.h2database.com/html/main.html windows 다운로드 후 실행
   * JDBC URL : __jdbc:h2:tcp://localhost/~/callbus__ 로 URL 설정 
@@ -28,13 +28,13 @@
 
 &nbsp;  
 * Eclipse 구동
-  * GitHub Repository 이용 / 프로젝트 __Import__
+  * GitHub Repository 이용 / 프로젝트 Import
   * Import 완료 후 프로젝트 우클릭 -> Gradle -> __Refresh Gradle Project__
   * 프로젝트 우클릭 -> Run As -> __Spring Boot App__
 
 &nbsp;
 ### :dart: 검증
-
+---
 * __Post Man 검증 (외부 유틸리티)__ : 
   * https://www.postman.com/ 응용 프로그램 혹은 웹 로그인 
   * BoardController에 해당하는 URL ex) GetMethod http://localhost/boards
@@ -54,6 +54,7 @@
 &nbsp;
 &nbsp;  
 ### :memo: API Documentation
+---
 &nbsp;  
 
  <img src="https://img.shields.io/badge/GET-getList-green">&nbsp;
