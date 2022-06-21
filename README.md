@@ -7,6 +7,8 @@
 
 &nbsp;
 ### :man_office_worker: 지원자 : 김태현
+### :email: Email : th1993kim@gmail.com
+### :iphone: H.P : 010-5536-5570
 
 &nbsp;  
 ### :computer: 사용 프레임워크 및 라이브러리
