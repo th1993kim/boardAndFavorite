@@ -69,7 +69,7 @@
 &nbsp;      
 &nbsp;     
 <img src="https://img.shields.io/badge/GET-getOne-green">&nbsp;  
-  * URL : __GET &nbsp;```http://localhost/boards/1 ```__
+  * URL : __GET &nbsp;```http://localhost/boards/{boardId} ```__
   * Function : 게시글 상세 조회
   * __Return__ : BoardEntity
 
@@ -89,7 +89,7 @@
 &nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/PUT-update-important">&nbsp;  
-  * URL : __PUT &nbsp;```http://localhost/boards/1```__
+  * URL : __PUT &nbsp;```http://localhost/boards/{boardId}```__
   * Function : 게시글 수정
   * Header : Authorization - <span style="color:red">__필수__</span>
   * Body : JSON DATA &nbsp;  
@@ -100,9 +100,9 @@
   * __Return__ : TRUE     
 
 &nbsp;  
-&nbsp;  
+&nbsp;   
 <img src="https://img.shields.io/badge/DELETE-delete-red">&nbsp;  
-  * URL : __DELETE &nbsp;```http://localhost/boards/1```__
+  * URL : __DELETE &nbsp;```http://localhost/boards/{boardId}```__
   * Function : 게시글 삭제
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
@@ -110,13 +110,13 @@
 &nbsp;  
 &nbsp;  
 <img src="https://img.shields.io/badge/POST-like-blue">&nbsp;     
-  * URL : __POST &nbsp;```http://localhost/boards/1/likes```__
+  * URL : __POST &nbsp;```http://localhost/boards/{boardId}/likes```__
   * Function : 좋아요 (게시글) - 중복 요청시에는 취소됨
   * Header : Authorization - <span style="color:red">__필수__</span>
   * __Return__ : TRUE     
 
 &nbsp;
-### :point_up: 추가 요구사항
+### :point_up: 추가 요구사항 
 1. 좋아요를 중복 요청시 해당 좋아요를 취소한다.
 2. 작성자Id(기본키)와 Authorization에 요청된 숫자가 동일해야 수정, 삭제 가능하다.
  
