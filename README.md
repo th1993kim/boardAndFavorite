@@ -19,12 +19,21 @@
 &nbsp;
 ### :earth_asia: 실행
 ---
+* STS(Eclipse) 설치
+  * 설치 URL: https://spring.io/tools Spring Tools 4 for Eclipse - OS에 맞게 설치 후 압축 해제
+  
+ &nbsp;   
 * H2 Database 설치 
   * 설치 URL : https://www.h2database.com/html/main.html windows 다운로드 후 실행
   * JDBC URL : __jdbc:h2:tcp://localhost/~/callbus__ 로 URL 설정 
   * username : __sa__
   * password : __공백__
   *  __*자세한 설정은 프로젝트 내의 application.yml를 참고 하시면 됩니다.__
+
+&nbsp;  
+* Project Lombok 설치
+  * 설치 URL : https://projectlombok.org/download 다운로드 후 실행
+  * 플러그인 설치 : 실행 후 IDE 찾기에서 __프로젝트 Import할 Eclipse.exe 선택__
 
 &nbsp;  
 * Eclipse 구동
