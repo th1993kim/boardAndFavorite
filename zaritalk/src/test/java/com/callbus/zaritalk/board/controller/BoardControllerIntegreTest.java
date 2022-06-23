@@ -20,9 +20,9 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.callbus.zaritalk.board.dto.BoardRequestDTO;
-import com.callbus.zaritalk.customer.domain.AccountType;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kth.boardAndFavorite.board.dto.BoardRequestDTO;
+import com.kth.boardAndFavorite.customer.domain.AccountType;
 
 @Transactional
 @AutoConfigureMockMvc

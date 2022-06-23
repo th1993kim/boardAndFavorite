@@ -22,15 +22,16 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 
-import com.callbus.zaritalk.board.domain.Board;
-import com.callbus.zaritalk.board.dto.BoardRequestDTO;
-import com.callbus.zaritalk.board.dto.BoardResponseDTO;
-import com.callbus.zaritalk.board.service.BoardLikeService;
-import com.callbus.zaritalk.board.service.BoardService;
-import com.callbus.zaritalk.customer.domain.AccountType;
-import com.callbus.zaritalk.customer.domain.Customer;
-import com.callbus.zaritalk.customer.service.CustomerService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kth.boardAndFavorite.board.controller.BoardController;
+import com.kth.boardAndFavorite.board.domain.Board;
+import com.kth.boardAndFavorite.board.dto.BoardRequestDTO;
+import com.kth.boardAndFavorite.board.dto.BoardResponseDTO;
+import com.kth.boardAndFavorite.board.service.BoardLikeService;
+import com.kth.boardAndFavorite.board.service.BoardService;
+import com.kth.boardAndFavorite.customer.domain.AccountType;
+import com.kth.boardAndFavorite.customer.domain.Customer;
+import com.kth.boardAndFavorite.customer.service.CustomerService;
 
 import lombok.extern.slf4j.Slf4j;
 

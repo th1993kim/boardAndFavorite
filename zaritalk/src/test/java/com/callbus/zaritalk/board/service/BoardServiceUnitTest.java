@@ -16,16 +16,18 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.callbus.zaritalk.board.domain.Board;
-import com.callbus.zaritalk.board.domain.BoardLike;
-import com.callbus.zaritalk.board.dto.BoardRequestDTO;
-import com.callbus.zaritalk.board.dto.BoardResponseDTO;
-import com.callbus.zaritalk.board.repository.BoardLikeRepository;
-import com.callbus.zaritalk.board.repository.BoardRepository;
-import com.callbus.zaritalk.common.exception.AuthenticationException;
-import com.callbus.zaritalk.customer.domain.AccountType;
-import com.callbus.zaritalk.customer.domain.Customer;
-import com.callbus.zaritalk.customer.repository.CustomerRepository;
+import com.kth.boardAndFavorite.board.domain.Board;
+import com.kth.boardAndFavorite.board.domain.BoardLike;
+import com.kth.boardAndFavorite.board.dto.BoardRequestDTO;
+import com.kth.boardAndFavorite.board.dto.BoardResponseDTO;
+import com.kth.boardAndFavorite.board.repository.BoardLikeRepository;
+import com.kth.boardAndFavorite.board.repository.BoardRepository;
+import com.kth.boardAndFavorite.board.service.BoardLikeService;
+import com.kth.boardAndFavorite.board.service.BoardService;
+import com.kth.boardAndFavorite.common.exception.AuthenticationException;
+import com.kth.boardAndFavorite.customer.domain.AccountType;
+import com.kth.boardAndFavorite.customer.domain.Customer;
+import com.kth.boardAndFavorite.customer.repository.CustomerRepository;
 
 import lombok.extern.slf4j.Slf4j;
 

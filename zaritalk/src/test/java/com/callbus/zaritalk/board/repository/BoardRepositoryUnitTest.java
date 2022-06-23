@@ -13,12 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.callbus.zaritalk.board.domain.Board;
-import com.callbus.zaritalk.board.domain.BoardLike;
-import com.callbus.zaritalk.board.dto.BoardResponseDTO;
-import com.callbus.zaritalk.customer.domain.AccountType;
-import com.callbus.zaritalk.customer.domain.Customer;
-import com.callbus.zaritalk.customer.repository.CustomerRepository;
+import com.kth.boardAndFavorite.board.domain.Board;
+import com.kth.boardAndFavorite.board.domain.BoardLike;
+import com.kth.boardAndFavorite.board.dto.BoardResponseDTO;
+import com.kth.boardAndFavorite.board.repository.BoardLikeRepository;
+import com.kth.boardAndFavorite.board.repository.BoardRepository;
+import com.kth.boardAndFavorite.customer.domain.AccountType;
+import com.kth.boardAndFavorite.customer.domain.Customer;
+import com.kth.boardAndFavorite.customer.repository.CustomerRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
