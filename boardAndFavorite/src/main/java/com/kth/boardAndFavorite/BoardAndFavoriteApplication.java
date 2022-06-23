@@ -6,10 +6,10 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @EnableAspectJAutoProxy //AOP 사용
 @SpringBootApplication
-public class ZaritalkApplication {
+public class BoardAndFavoriteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZaritalkApplication.class, args);
+		SpringApplication.run(BoardAndFavoriteApplication.class, args);
 	} 
 
 }
