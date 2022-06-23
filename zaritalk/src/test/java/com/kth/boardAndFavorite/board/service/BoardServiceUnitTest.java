@@ -1,4 +1,4 @@
-package com.callbus.zaritalk.board.service;
+package com.kth.boardAndFavorite.board.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;

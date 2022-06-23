@@ -1,4 +1,4 @@
-package com.callbus.zaritalk.board.controller;
+package com.kth.boardAndFavorite.board.controller;
 
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

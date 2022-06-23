@@ -1,4 +1,4 @@
-package com.callbus.zaritalk.board.repository;
+package com.kth.boardAndFavorite.board.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

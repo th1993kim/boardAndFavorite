@@ -1,4 +1,4 @@
-package com.callbus.zaritalk.board.controller;
+package com.kth.boardAndFavorite.board.controller;
 
 
 
