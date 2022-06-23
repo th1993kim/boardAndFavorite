@@ -138,8 +138,3 @@
 1. 좋아요를 중복 요청시 해당 좋아요를 취소한다.
 2. 작성자Id(기본키)와 Authorization에 요청된 숫자가 동일해야 수정, 삭제 가능하다.
  
-&nbsp;
-#### :briefcase: 지원파트 : 자리톡 백엔드 개발자
-#### :man_office_worker: 지원자 : 김태현
-#### :email: Email : th1993kim@gmail.com
-#### :iphone: H.P : 010-5536-5570
