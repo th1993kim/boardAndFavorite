@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AuthCheckAop {
 	
-	@Around("@annotation(com.callbus.zaritalk.common.annotation.AuthCheck)")
+	@Around("@annotation(com.kth.boardAndFavorite.common.annotation.AuthCheck)")
 	public Object checkAuthorization(ProceedingJoinPoint point) throws Throwable{
 		HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
 		String authorization ="";
